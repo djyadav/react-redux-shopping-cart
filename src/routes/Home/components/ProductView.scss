@@ -1,0 +1,54 @@
+$grey:#efefef;
+$blue: #0099ff;
+$green:#70c35d;
+.product{
+	border: 1px solid;
+	margin: 5px;
+	.image{
+		position: relative;
+		img{
+			width: 100%;
+		}
+		.discount-tag{
+			    position: absolute;
+			    background: $green;
+			    color: #fff;
+			    top: 10px;
+			    left: 0px;
+			    font-size: 11px;
+			    padding: 5px;
+		}
+	}
+	.caption{
+		padding: 10px;
+		background: $grey;
+		position: relative;
+
+		button{
+			border:1px solid $blue;
+			color: $blue;
+			box-shadow: none;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			padding: 5px;
+			cursor: pointer;
+		}
+		button:hover{
+			background: $blue;
+			color: #fff;
+		}
+
+	}
+
+}
+.toast{
+	position: fixed;
+	top: 0px;
+	background: $green;
+	color: #fff;
+	left: calc(50% - 100px);
+	width: 200px;
+	text-align: center;
+	padding: 5px;
+}

@@ -1,0 +1,89 @@
+$grey:#efefef;
+$blue: #0099ff;
+$green:#70c35d;
+.container{
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: 10px auto;
+	float: none;
+}
+body{
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+}
+button{
+	cursor: pointer;
+}
+.hidden{
+	display: none !important;
+}
+header{
+	border-bottom: 1px solid $grey;
+	padding: 10px;
+	#cart-link{
+		background:$blue;
+		padding: 5px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px;
+		.count{
+			font-size: 12px;
+			background: #fff;
+			color: $blue;
+			padding: 3px;
+			border-radius: 50%;
+			width: 17px;
+			height: 17px;
+			display: inline-block;
+			text-align: center;
+		}
+	}
+}
+.pull-right{
+	float: right;
+}
+.pull-left{
+	float: left;
+}
+.grid{
+
+}
+.grid:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.img-responsive{
+	max-width: 100%;
+}
+.grid-item{
+	display: block;
+	float: left;
+	margin: 5px;
+}
+.grid-item-2{
+	width: calc( 16.6666% - 10px);
+margin: 5px;
+}
+.grid-item-3{
+	width: calc( 25% - 10px);
+
+}
+.grid-item-4{
+width: calc( 33.3333% - 10px);
+margin: 5px;
+}
+.grid-item-9{
+width: calc( 75% - 10px);
+}
+@media(max-width: 640px){
+	.grid-item{
+		float: none;
+		width: 100%;
+	}
+}
